@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PitchDeckTemplates.com - curated pitch deck templates</title>
+  <meta name="description" content="A hand-picked collection of the best pitch deck templates for startup founders, segmented by industry, funding stage, and presentation software.">
+  
+      <!-- Search -->
+      <meta name="robots" content="index,follow"><!-- All Search Engines -->
+      <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+      <!-- Social -->
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="PitchDeckTemplates.com - curated pitch deck templates">
+      <meta property="og:image" content="https://pitchdecktemplates.com/img/figma-pitch-deck_preview.png">
+      <meta property="og:description" content="A hand-picked collection of the best pitch deck templates for startup founders, segmented by industry, funding stage, and presentation software.">
+      <meta property="og:site_name" content="Pitch Deck Templates">
+      <meta property="og:locale" content="en_US">
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="PitchDeckTemplates.com - curated pitch deck templates">
+      <meta name="twitter:description" content="A hand-picked collection of the best pitch deck templates for startup founders, segmented by industry, funding stage, and presentation software.">
+      <meta name="twitter:image" content="https://pitchdecktemplates.com/img/figma-pitch-deck_preview.png">
+
+      <!-- Color -->
+      <meta name="theme-color" content="#F17D59">
+      <meta name="apple-mobile-web-app-status-bar-style" content="#F17D59">
+
+
+  <link rel="icon" type="image/png" href="/img/logo/pitch-deck-templates-icon_64.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            serif: ['Instrument Serif', 'Georgia', 'serif'],
+          },
+          colors: {
+            slate: {
+              850: '#1a1f2e',
+              950: '#0d1117',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+    }
+    .card-hover:hover .card-image {
+      transform: scale(1.02);
+    }
+    .card-image {
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .grain {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+    }
+    .section-title {
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #ED6C47, #F17D59);
+      border-radius: 2px;
+    }
+    .badge-pptx { background: rgba(255, 255, 255, 0.1); color: #F17D59; border: 1px solid rgba(241, 125, 89, 0.2); }
+    .badge-gslides { background: rgba(255, 255, 255, 0.1); color: #FBBC04; border: 1px solid rgba(251, 188, 4, 0.2); }
+    .badge-figma { background: rgba(255, 255, 255, 0.1); color: #A259FF; border: 1px solid rgba(162, 89, 255, 0.2); }
+    .badge-canva { background: rgba(255, 255, 255, 0.1); color: #00C4CC; border: 1px solid rgba(0, 196, 204, 0.2); }
+    .badge-key { background: rgba(255, 255, 255, 0.1); color: #007AFF; border: 1px solid rgba(0, 122, 255, 0.2); }
+    .badge-free { background: rgba(255, 255, 255, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.2); }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+  <div class="fixed inset-0 pointer-events-none grain z-50"></div>
+  
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <div class="w-8 h-8 flex items-center justify-center">
+            <picture>
+              <source srcset="/img/logo/pitch-deck-templates-icon_512.png" media="(min-width: 768px)">
+              <source srcset="/img/logo/pitch-deck-templates-icon_64.png" media="(max-width: 767px)">
+              <img src="/img/logo/pitch-deck-templates-icon_64.png" alt="Pitch Deck Templates" class="w-full h-full object-contain">
+            </picture>
+          </div>
+          <span class="font-semibold text-lg">Pitch Deck Templates</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm text-slate-400">
+          <a href="/#best" class="hover:text-white transition-colors">Best Templates</a>
+          <a href="/#powerpoint" class="hover:text-white transition-colors">PowerPoint</a>
+          <a href="/#google-slides" class="hover:text-white transition-colors">GSlides</a>
+          <a href="/#figma" class="hover:text-white transition-colors">Figma</a>
+          <a href="/#canva" class="hover:text-white transition-colors">Canva</a>
+          <div class="relative group">
+            <button class="hover:text-white transition-colors flex items-center gap-1">
+              Industries
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-48 bg-slate-900 border border-slate-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div class="py-2">
+                <a href="/#tech" class="block px-4 py-2 hover:bg-slate-800 transition-colors">Tech & SaaS</a>
+                <a href="/#finance" class="block px-4 py-2 hover:bg-slate-800 transition-colors">Finance</a>
+                <a href="/#real-estate" class="block px-4 py-2 hover:bg-slate-800 transition-colors">Real Estate</a>
+                <a href="/#retail" class="block px-4 py-2 hover:bg-slate-800 transition-colors">Retail & CPG</a>
+                <a href="/#health" class="block px-4 py-2 hover:bg-slate-800 transition-colors">Health & Medical</a>
+                <a href="/#entertainment" class="block px-4 py-2 hover:bg-slate-800 transition-colors">Entertainment</a>
+              </div>
+            </div>
+          </div>
+          <a href="/#free" class="hover:text-white transition-colors">Free</a>
+        </div>
+        <a href="/#best" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#ED6C47] hover:bg-[#F17D59] text-sm font-medium transition-colors">
+          Browse All
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#ED6C47]/10 via-transparent to-transparent"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#ED6C47]/10 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#ED6C47]/10 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div class="animate-fade-in-up" style="animation-delay: 0.1s; opacity: 0;">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700/50 text-sm text-slate-300 mb-8">
+          <svg class="w-4 h-4 text-[#F17D59]" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          Collectively used by 10,000+ founders
+        </span>
+      </div>
+      
+      <h1 class="animate-fade-in-up" style="animation-delay: 0.2s; opacity: 0;">
+        <span class="block font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white mb-4">
+          Pitch Deck Templates
+        </span>
+        <span class="block text-2xl sm:text-3xl md:text-4xl font-light text-slate-400">
+          that <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F17D59] to-[#ED6C47]">actually close deals</span>
+        </span>
+      </h1>
+      
+      <p class="mt-8 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.3s; opacity: 0;">
+        A hand-picked collection of pitch deck templates, curated by experts. Built for PowerPoint, Google Slides, Figma, Keynote, and Canva.
+      </p>
+      
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.4s; opacity: 0;">
+        <a href="#best" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[#ED6C47] to-[#F17D59] hover:from-[#F17D59] hover:to-[#F89072] text-white font-semibold text-lg transition-all shadow-lg shadow-[#ED6C47]/25 hover:shadow-[#ED6C47]/40">
+          Explore Templates
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+        <a href="#free" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-medium text-lg transition-colors">
+          Free Templates
+        </a>
+      </div>
+
+      <div class="mt-16 animate-fade-in-up" style="animation-delay: 0.5s; opacity: 0;">
+        <img src="./img/icons/file-formats.png" alt="Available file formats: PowerPoint, Google Slides, Keynote, Figma, Canva" class="mx-auto" style="max-height: 50px;">
+      </div>
+    </div>
+    
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- Trusted By Section -->
+<section class="py-16 px-6 border-b border-slate-800/50">
+      <div class="max-w-7xl mx-auto">
+
+        
+      <h2 class="mt-8 text-lg sm:text-xl text-slate-400 mx-auto animate-fade-in-up">Our Manifesto</h2>
+      <p class="section-title text-5xl sm:text-5xl font-serif text-white mb-4 mx-auto animate-fade-in-up font-style-italic" style="animation-delay: 0.3s; opacity: 0;">Not all templates are made equally.</p>
+      <p class="mt-8 text-lg sm:text-xl text-slate-400 mx-auto animate-fade-in-up" style="animation-delay: 0.3s; opacity: 0;"> There are thousands of pitch deck templates to choose from online, but which ones can you actually trust?</p><ul class="mt-8 text-lg sm:text-xl text-slate-400 mx-auto animate-fade-in-up space-y-3">
+                        <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-slate-300">Some look visually-stunning, but are missing substance.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-slate-300">Others are tedious to edit (ie. the "graphs" are actually shapes).</span>
+            </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-slate-300">Most templates don't even cover all the critical slides required for a complete pitch!</span>
+            </li></ul><p class="mt-8 text-lg sm:text-xl text-slate-400 mx-auto animate-fade-in-up" style="animation-delay: 0.3s; opacity: 0;">As founders who have personally been through the process of raising from VCs, we know time is the last thing you have to spare, so we hope this resource saves you some of the legwork. Having created hundreds of pitch decks that collectively closed billions, we have first-hand experience with what it takes to succeed (and how to spot a template that sets you up for failure).</p>
+    <p class="mt-8 text-lg sm:text-xl text-slate-400 mx-auto animate-fade-in-up" style="animation-delay: 0.3s; opacity: 0;">This is our hand-vetted collection of the best pitch deck templates broken down by industry, funding, stage, and software. We'll keep this updated regularly with new finds!</p></div>
+    </section>
+
+    <!-- Best Overall Section -->
+<section id="best" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best Pitch Deck Templates</h2>
+          <p class="text-slate-400 max-w-2xl">Our top picks across all categories. Proven templates, trusted by thousands of founders.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
+          
+          <!-- Brutalist/Turnkey -->
+          <a href="templates/turnkey-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/brutalist-pitch-deck-template.png" alt="Turnkey Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">50+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Turnkey Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Fill-in-the-blank slides with advice from VC-backed founders.</p>
+              <div class="space-y-1.5 text-sm mb-4">
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Fill-in-the-blank format</span>
+                </div>
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Brutalist design aesthetic</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                  View Template <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Seed Deck -->
+          <a href="templates/investment-bank-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/investment-bank-presentation-ppt-template_vip.graphics-slides.webp" alt="Investment Bank Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">60+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Investment Bank Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Rich library of denser slide templates with a more institutional look.</p><div class="space-y-1.5 text-sm mb-4">
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Consulting firm style slides</span>
+                </div>
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Rich library of useful graphics</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Mobile App -->
+          <a class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm" target="_blank" href="templates/mobile-app-pitch-deck.html">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/mobile-app-pitch-deck-template.png" alt="Mobile App Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">42+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Mobile App Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Ready-made investor pitch deck template for mobile app startups.</p>
+              <div class="space-y-1.5 text-sm mb-4">
+                
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Built-in expert advice</span>
+                </div><div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Editable mobile mockups</span>
+                </div></div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                  View Template <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Figma Pitch Deck -->
+          <a href="templates/executive-summary-bundle.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/executive-summary-one-pager-bundle.jpg" alt="Executive Summary Bundle" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">2+ templates</span>
+              </div><h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Executive Summary Bundle</h3>
+              <p class="text-sm text-slate-400 mb-4">A fresh take on one-page executive summaries for investor intros.</p><div class="space-y-1.5 text-sm mb-4">
+                
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Light + dark mode version</span>
+                </div><div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Visually-engaging layout</span>
+                </div></div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$36</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+          
+
+
+        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Brutalist/Turnkey -->
+          <a href="templates/b2b-sales-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/sales-presentation-template_vip.graphics-slides.webp" alt="B2B Sales Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-gslides inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">GSLIDES</span>
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">35+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">B2B Sales Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Expert-designed template for B2B sales presentations.</p><div class="space-y-1.5 text-sm mb-4">
+                
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Ideal for B2B SaaS sales</span>
+                </div><div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Editable device mockups</span>
+                </div></div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$19</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Seed Deck -->
+          <a href="templates/real-estate-investment-memo.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/real-estate-offering-memo-template_preview.jpg" alt="RE Investment Memo" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">28+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Real Estate OM Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Property investment offering memorandum template.</p>
+<div class="space-y-1.5 text-sm mb-4">
+                
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Two themed options included</span>
+                </div><div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Tailored for hospitality</span>
+                </div></div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$17</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Mobile App -->
+          <a href="templates/figma-investor-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-pitch-deck_preview.webp" alt="Figma Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">50+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Investor Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Investor pitch deck template for Figma, made by VC-backed founders.</p>
+<div class="space-y-1.5 text-sm mb-4">
+                
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Try before you buy: free trial</span>
+                </div><div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Responsive auto-layout</span>
+                </div></div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$25</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+          
+
+          <!-- Figma Pitch Deck -->
+          <a href="templates/creatable-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/creatable-pitch-deck.png" alt="Creatable Investment Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">37+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Creatable Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">One of the most extensive free pitch deck templates we could find.</p>
+<div class="space-y-1.5 text-sm mb-4">
+                
+<div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Minimalist, brandable design</span>
+                </div><div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500 " fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  <span>Covers most key slide topics</span>
+                </div></div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+
+        </div></div>
+    </section>
+
+    <!-- Premium Templates Section -->
+    <section id="premium" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Pitch Deck Templates by Funding Stage</h2>
+          <p class="text-slate-400 max-w-2xl">Templates tailored to every step of the fundraising journey.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Seed Pitch Deck -->
+          <a href="templates/seed-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/seed-pitch-deck-template.webp" alt="Seed Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">34+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Seed Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Fill-in-the-blank slides designed by VC-backed founders for seed-stage startups.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Startup Pitch Deck (Series A) -->
+          <a href="templates/series-a-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm relative">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src=".\img\series-a-pitch-deck-template.webp" alt="Series A Pitch Deck Template" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">49+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Series A Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Comprehensive deck for growth-stage founders raising Series A and beyond.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                  View Template <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="templates/linkedin-series-b-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/linkedin-investor-presentation-template_vip.graphics-slides.webp" alt="LinkedIn Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">55+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Series B Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Pitch deck template adapted from LinkedIn’s $10M Series B investor presentation.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$27</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+          <!-- Investment Bank Deck -->
+          <a href="templates/investment-bank-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/investment-bank-presentation-ppt-template_vip.graphics-slides.webp" alt="Investment Bank Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">60+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Investment Bank Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Dense slides in the traditional style of investment banks, PE, and consulting firms.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PowerPoint Section -->
+    <section id="powerpoint" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
+            <img src="./img/icons/powerpoint.png" alt="PowerPoint" class="w-12 h-12">
+          </div>
+          <div>
+            <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for PowerPoint</h2>
+            <p class="text-slate-400 max-w-2xl">Professional .PPTX templates compatible with Microsoft PowerPoint.</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Swiss Pitch Deck -->
+          <a href="templates/swiss-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/swiss-pitch-deck-template.jpg" alt="Swiss Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">40+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Swiss Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Fill-in-the-blank slides with expert guidance + Swiss design.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Software Pitch Deck -->
+
+
+          <a href="templates/investment-bank-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/investment-bank-presentation-ppt-template_vip.graphics-slides.webp" alt="Investment Bank Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">60+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Investment Bank Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For investment banking and private equity professionals.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Silicon Deck -->
+          <a href="templates/silicon-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/VIP.graphics-Silicon-Deck.jpg" alt="Silicon Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">110+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Silicon Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Proven template that closed over $84M across industries.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$39</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Startup Pitch Deck (Series A) -->
+          <a href="templates/business-plan-presentation-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/startup-pitch-deck-template.webp" alt="Business Plan Presentation Template" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">60+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Business Plan Presentation</h3>
+              <p class="text-sm text-slate-400 mb-4">Comprehensive deck for presenting your business plan.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$24</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Slides Section -->
+    <section id="google-slides" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
+            <img src="./img/icons/google-slides.png" alt="Google Slides" class="w-12 h-12">
+          </div>
+          <div>
+            <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Google Slides</h2>
+            <p class="text-slate-400 max-w-2xl">Collaborate in real-time with Google Slides templates.</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- First Round -->
+          <a href="templates/first-round-capital-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/first-round-capital-presentation-template_vip.graphics-slides.webp" alt="First Round Capital" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-gslides inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">GSLIDES</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">20+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">First Round Capital Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Adapted from top seed-stage investor First Round Capital.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$12</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- YC Pitch Deck -->
+          <a href="templates/yc-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/yc-pitch-deck-template.jpg" alt="YC Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">15+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">YC Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Adapted from Y-Combinator's proven format.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$9</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- B2B Sales -->
+          <a href="templates/b2b-sales-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/sales-presentation-template_vip.graphics-slides.webp" alt="B2B Sales Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-gslides inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">GSLIDES</span>
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">35+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">B2B Sales Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Expert-designed template for B2B sales presentations.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$19</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Startups Section -->
+    <section id="tech" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Tech Startups</h2>
+          <p class="text-slate-400 max-w-2xl">Purpose-built for SaaS, AI, mobile apps, and tech companies.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Mobile App -->
+          <a href="templates/mobile-app-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/mobile-app-pitch-deck-template.png" alt="Mobile App Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">42+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Mobile App Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For mobile apps, streaming services, and software platforms.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$17</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Software -->
+          <a href="templates/software-saas-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/software-investor-presentation-template_vip.graphics-slides-900x600.webp" alt="Software Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">60+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Software & SaaS Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For software and SaaS businesses with MRR/ARR metrics.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$27</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- AI -->
+          <a href="templates/ai-machine-learning-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/AI-LLM-pitch-deck-template_vip.graphics-slides.webp" alt="AI Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">43+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">AI / Machine Learning Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Purpose-built for AI and ML companies.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$21</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Agency Section -->
+    <section id="agency" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Agencies & Sales</h2>
+          <p class="text-slate-400 max-w-2xl">Professional templates for agencies, consultants, and sales teams.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="templates/b2b-sales-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/sales-presentation-template_vip.graphics-slides.webp" alt="B2B Sales Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-gslides inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">GSLIDES</span>
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">35+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">B2B Sales Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Expert-designed template for B2B sales presentations.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$19</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Agency Figma -->
+          <a href="templates/agency-pitch-deck-for-figma.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-agency-pitch.webp" alt="Agency Figma Template" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">15+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Agency Pitch Deck for Figma</h3>
+              <p class="text-sm text-slate-400 mb-4">Professional agency pitch deck template from Figma Slides.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- MarTech Pitch Deck -->
+          <a href="templates/martech-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/martech-pitch-deck-template.webp" alt="MarTech Startup Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">52+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">MarTech Startup Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Investor presentation built for MarTech startups and marketing agencies.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$33</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Figma Section -->
+    <section id="figma" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
+            <img src="./img/icons/figma.png" alt="Figma" class="w-12 h-12">
+          </div>
+          <div>
+            <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Figma</h2>
+            <p class="text-slate-400 max-w-2xl">Design-forward templates for Figma with pixel-perfect control.</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Figma Pitch Deck -->
+          <a href="templates/figma-investor-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-pitch-deck_preview.webp" alt="Figma Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">Try it free</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">50+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Investor Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Expert-designed pitch deck template for Figma.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$25</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Fluent UI -->
+          <a href="templates/fluent-ui-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800 flex items-center justify-center">
+              <img src="./img/fluent-ui-pitch-deck-template_preview.webp" alt="Figma Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">Try it free</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">42+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Fluent UI Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Microsoft Fluent UI inspired pitch deck.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$24+</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Figma Bento -->
+          <a href="templates/figma-bento-grid-keynote.html"_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-bento-grid-keynote-template_vip.graphics-slides.webp" alt="Figma Bento Grid" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">Try it free</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">30+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Bento Grid Keynote</h3>
+              <p class="text-sm text-slate-400 mb-4">Apple-style bento grid presentation template.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$19</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Finance Section -->
+    <section id="finance" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Finance & Investment</h2>
+          <p class="text-slate-400 max-w-2xl">Professional templates for VC funds, PE firms, and investment banks.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="templates/fund-lp-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/vc-fund-pitch-deck-template_vip.graphics-slides.webp" alt="Fund LP Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">57+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Fund LP Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Raise LP capital for VC, PE, RE, crypto, or quant funds.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$31</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/ma-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/investment-bank-series-x-pitch-deck-template_preview.jpg" alt="M&A Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">52+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">M&A Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For pitching M&A or roll-up deals to PE firms.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$27</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/investment-bank-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/investment-bank-presentation-ppt-template_vip.graphics-slides.webp" alt="Investment Bank Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">60+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Investment Bank Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For investment banking and private equity professionals.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Estate Section -->
+    <section id="real-estate" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Real Estate</h2>
+          <p class="text-slate-400 max-w-2xl">Pitch deck templates for real estate developers, proptech startups, and hospitality brands.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <a href="templates/real-estate-offering-memo.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/real-estate-offering-memo-template_preview.jpg" alt="RE Investment Memo" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">28+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Real Estate OM Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Create an institutional-grade real estate offering memorandum with this PowerPoint template.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$17</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/proptech-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/proptech-investor-presentation-template_vip.graphics-slides.webp" alt="PropTech Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">52+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">PropTech Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For PropTech startups and real estate technology.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$23</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/commercial-real-estate-memo.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/commercial-real-estate-offering-memo.jpg" alt="Commercial Real Estate Offering Memo" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-canva inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">Canva</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">20+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">CRE Offering Memo</h3>
+              <p class="text-sm text-slate-400 mb-4">Create a clean commercial real estate offering memorandum with this Canva template.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$47</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/hotel-hospitality.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/hotel-pitch-deck-template_vip.graphics-slides-900x600.webp"  alt="Hotel Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">52+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Hotel & Hospitality</h3>
+              <p class="text-sm text-slate-400 mb-4">For hotels, resorts, and travel brands.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$23</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Retail Section -->
+    <section id="retail" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Retail & CPG</h2>
+          <p class="text-slate-400 max-w-2xl">Pitch deck templates for consumer packaged goods, food & beverage, and retail brands.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <a href="templates/cpg-marketing-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/CPG-marketing-deck-presentation-template_vip.graphics-slides.jpg" alt="CPG Marketing Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">44+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">CPG Marketing Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For DTC and eCommerce brands.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$32</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/natural-products.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/organic-wellness-pitch-deck-template.png" alt="Organic Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">30+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Natural Products</h3>
+              <p class="text-sm text-slate-400 mb-4">For natural products brands.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$99</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/liquor-beverage.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/liquor-alcohol-beverage-pitch-deck-template.png" alt="Liquor Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">74+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Liquor & Beverage</h3>
+              <p class="text-sm text-slate-400 mb-4">For spirits and beverage brands.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$32</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/retail-distribution.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/CPG-retail-distribution-presentation-template_vip.graphics-slides.webp" alt="Retail Distribution" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">52+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Retail Distribution</h3>
+              <p class="text-sm text-slate-400 mb-4">For pitching retailers.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$28</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Section -->
+    <section id="health" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Health & Wellness</h2>
+          <p class="text-slate-400 max-w-2xl">Pitch deck templates for biotech, medical devices, and wellness brands.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="templates/biotech-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/pharmaceuticals-biomedical-presentation-template_vip.graphics-slides.png" alt="Biotech Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">49+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Biotech Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For life sciences and biotech startups.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$22</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/medical-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/medical-investor-presentation-template_vip.graphics-slides-900x600.webp" alt="Medical Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">44+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Medical Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For medical and healthtech startups.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$19</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/wellness-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/wellness-investor-presentation-template_vip.graphics-slides.webp" alt="Wellness Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">35+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Wellness Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For wellness and holistic health startups.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$24</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Entertainment Section -->
+    <section id="entertainment" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Entertainment</h2>
+          <p class="text-slate-400 max-w-2xl">Pitch deck templates for film, TV, gaming, and media companies.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <a href="templates/film-tv-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/film-pitch-deck-template_preview-mockup.webp" alt="Film & TV Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">54+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Film & TV Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">50+ slides for pitching film & TV screenplays.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$22</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/video-game-studio-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/gaming-investor-presentation-template_vip.graphics-slides.webp" alt="Game Studio Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">36+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Video Game Studio Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">For game studios pitching publishers and investors.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$23</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Canva Section -->
+    <section id="canva" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
+            <img src="./img/icons/canva.png" alt="Canva" class="w-12 h-12">
+          </div>
+          <div>
+            <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Best for Canva</h2>
+            <p class="text-slate-400 max-w-2xl">Easy-to-edit pitch deck templates for Canva. No design skills required.</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="templates/canva-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/canva-pitch-deck-template_vip.graphics-slides-900x600.png" alt="Canva Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-canva inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">Canva</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">33+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Canva Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Expert-designed pitch deck template built for Canva.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$22</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="templates/commercial-real-estate-memo.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/commercial-real-estate-offering-memo.jpg" alt="Commercial Real Estate Offering Memo" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-canva inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">Canva</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">20+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">CRE Offering Memo</h3>
+              <p class="text-sm text-slate-400 mb-4">Create a clean commercial real estate offering memorandum with this Canva template.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$47</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/modern-startup-pitch-free.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/salford-pitch-deck.png" alt="Canva Modern Startup Pitch Presentation Template" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-canva inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">Canva</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Canva Modern Startup Pitch Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Free modern startup pitch deck template with clean mesh gradient design.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- One-Pagers Section -->
+    <section id="one-pagers" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">One-Pagers & Executive Summaries</h2>
+          <p class="text-slate-400 max-w-2xl">Concise templates for executive summaries and investor one-pagers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <a href="templates/executive-summary-bundle.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/executive-summary-one-pager-bundle.jpg" alt="Executive Summary Bundle" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Executive Summary Bundle</h3>
+              <p class="text-sm text-slate-400 mb-4">Professional one-page executive summary templates for introducing your startup to investors.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$36</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/factsheet-template-bundle.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/floating-letter-mockupfactsheet-bundle.jpg" alt="Factsheet Template Bundle" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Factsheet Template Bundle</h3>
+              <p class="text-sm text-slate-400 mb-4">Professional company and product factsheet one-pagers for investor materials and sales.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$48</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/tv-pitch-1-pager.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/tv-show-pitch-one-pager.jpg" alt="TV Pitch 1-Pager" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">TV Pitch 1-Pager</h3>
+              <p class="text-sm text-slate-400 mb-4">One-page pitch template for TV shows, series, and film projects to studios and networks.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$12</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Templates Section -->
+    <section id="free" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Free Pitch Deck Templates</h2>
+          <p class="text-slate-400 max-w-2xl">Although free templates are typically much shorter than premium counterparts (and thus often don't cover all key topics for an pitch deck), they can be a great starting point for early-stage founders with design skills.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="templates/figma-investor-pitch-deck-template.html" target="_blank" class="group card-hover bg-gradient-to-br from-[#ED6C47]/20 to-[#F17D59]/20 rounded-2xl border border-[#ED6C47]/30 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-pitch-deck_preview.webp" alt="Figma Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Investor Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Try this expert-made Figma investor pitch deck template free!</p>
+              <div class="flex items-center justify-between pt-4 border-t border-[#ED6C47]/30">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">Get Template →</span>
+              </div>
+            </div>
+          </a>
+          <a href="templates/creatable-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/creatable-pitch-deck.png" alt="Creatable Investment Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">37+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Creatable Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">53+ slides tailored for sales presentations and client pitches.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+          <!-- Fluent UI -->
+          <a href="templates/fluent-ui-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800 flex items-center justify-center">
+              <img src="./img/fluent-ui-pitch-deck-template_preview.webp" alt="Figma Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">Try it free</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">42+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Fluent UI Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Microsoft Fluent UI inspired pitch deck.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$24+</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Figma Bento -->
+          <a href="templates/figma-bento-grid-keynote.html"_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-bento-grid-keynote-template_vip.graphics-slides.webp" alt="Figma Bento Grid" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">Try it free</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">30+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Bento Grid Keynote</h3>
+              <p class="text-sm text-slate-400 mb-4">Apple-style bento grid presentation template.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$19</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/figma-grey-presentation-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-grey-presentation-template.png" alt="Figma Grey Presentation Template" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">20+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Grey Presentation Template</h3>
+              <p class="text-sm text-slate-400 mb-4">A design-driven, visually-stunning 21-slide presentation template for Figma.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Template →</span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="templates/figma-community-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-[#ED6C47]/20 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/figma-startup-pitch.png" alt="Figma Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-figma inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">FIG</span>
+                <span class="badge-free inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold">FREE</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Figma Community Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">A free, "essentials-only" 20-slide startup pitch deck template from the official Figma team.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-[#F17D59]">Free</span>
+                <span class="text-[#F17D59] text-sm font-medium">Get Template →</span>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pitch Deck Examples Section -->
+    <section id="examples" class="py-24 px-6 bg-gradient-to-b from-slate-900/50 to-transparent">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="section-title text-3xl sm:text-4xl font-serif text-white mb-4">Famous Pitch Deck Examples</h2>
+          <p class="text-slate-400 max-w-2xl">Learn from the best: templates built on the proven formulas used in the actual pitch decks behind  billion-dollar startups.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="templates/airbnb-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/airbnb-pitch-deck-template.jpg" alt="Airbnb Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">15+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Airbnb Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">The seed deck that launched a $100B+ company.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$9</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/dropbox-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/dropbox-pitch-deck-template_slides.webp" alt="Dropbox Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">17+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Dropbox Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Modern remake of the $1.2M seed deck that won Sequoia.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$24</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/linkedin-series-b-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/linkedin-investor-presentation-template_vip.graphics-slides.webp" alt="LinkedIn Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">55+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Series B Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Pitch deck template adapted from LinkedIn’s $10M Series B investor presentation.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$9</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/yc-pitch-deck-template.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/yc-pitch-deck-template.jpg" alt="YC Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="badge-key inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">KEY</span>
+                <span class="badge-gslides inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">GSLIDES</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">15+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">YC Pitch Deck Template</h3>
+              <p class="text-sm text-slate-400 mb-4">Adapted from Y Combinator's proven format.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$9</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/brex-pitch-deck.html" target="_blank" class="group card-hover bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/brex-investor-pitch-deck.jpg" alt="Brex Pitch Deck" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">38+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">Brex Pitch Deck</h3>
+              <p class="text-sm text-slate-400 mb-4">Modern pitch deck template used by Brex for investor presentations.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                <span class="text-xl font-bold text-white">$20</span>
+                <span class="text-[#F17D59] text-sm font-medium">View →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="templates/all-pitch-deck-examples.html" target="_blank" class="group card-hover bg-gradient-to-br from-[#ED6C47]/20 to-[#F17D59]/20 rounded-2xl border border-[#ED6C47]/30 overflow-hidden backdrop-blur-sm">
+            <div class="aspect-[16/10] overflow-hidden bg-slate-800">
+              <img src="./img/best-investor-presentation-templates_vip.graphics-slides.png" alt="All Pitch Deck Examples" class="card-image w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500">BUNDLE</span>
+                <span class="badge-pptx inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium">PPTX</span>
+                <span class="inline-flex items-center gap-1.5 py-1 rounded-md text-xs font-medium text-slate-300">254+ slides</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white group-hover:text-[#F17D59] transition-colors mb-2">All Pitch Deck Examples</h3>
+              <p class="text-sm text-slate-400 mb-4">Get all 25+ famous pitch deck examples in one bundle.</p>
+              <div class="flex items-center justify-between pt-4 border-t border-[#ED6C47]/30">
+                <span class="text-xl font-bold text-white">$98</span>
+                <span class="text-[#F17D59] text-sm font-medium">View Bundle →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="bg-gradient-to-br from-[#ED6C47]/25 to-[#F17D59]/25 rounded-3xl border border-[#ED6C47]/30 p-12 backdrop-blur-sm">
+          <h2 class="text-3xl sm:text-4xl font-serif text-white mb-4">Ready to raise your round?</h2>
+          <p class="text-slate-400 text-lg mb-8 max-w-2xl mx-auto">Join thousands of founders who've used these templates to raise over $100M from top-tier investors.</p>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a href="#best" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[#ED6C47] to-[#F17D59] hover:from-[#F17D59] hover:to-[#F89072] text-white font-semibold text-lg transition-all shadow-lg shadow-[#ED6C47]/25">
+              Browse All Templates
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="#free" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 text-white font-medium text-lg transition-colors">
+              Try Free Templates
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800/50 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 flex items-center justify-center">
+            <picture>
+              <source srcset="/img/logo/pitch-deck-templates-icon_512.png" media="(min-width: 768px)">
+              <source srcset="/img/logo/pitch-deck-templates-icon_64.png" media="(max-width: 767px)">
+              <img src="/img/logo/pitch-deck-templates-icon_64.png" alt="Pitch Deck Templates" class="w-full h-full object-contain">
+            </picture>
+          </div>
+          <span class="font-semibold">Pitch Deck Templates</span>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-slate-400">
+          <a href="#best" class="hover:text-white transition-colors">Best Pitch Deck Templates</a>
+          <a href="#free" class="hover:text-white transition-colors">Free Pitch Deck Templates</a>
+        </div>
+        <div class="text-sm text-slate-500">
+          © 2024 PitchDeckTemplates. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
