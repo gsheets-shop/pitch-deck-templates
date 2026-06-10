@@ -66,21 +66,22 @@
     .badge-key { background: rgba(255, 255, 255, 0.1); color: #007AFF; border: 1px solid rgba(0, 122, 255, 0.2); }
     .badge-free { background: rgba(255, 255, 255, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.2); }
   </style>
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//track.sitaraman.vip/piwik/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '15']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//track.sitaraman.vip/piwik/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '15']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 </head>
 
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
@@ -310,7 +311,7 @@
         </div>
 
       </div>
-      
+      {{/if}}
 
       <!-- Download Button (repeat) -->
       <div class="mb-12 text-center flex justify-center gap-3 flex-wrap">
@@ -331,8 +332,8 @@
 
       <!-- Advertisement Banner -->
       <div class="mb-12 text-center">
-        <a href="https://insiteful.co/?ref=pdt" target="_blank" style="margin: 0 auto; text-align: center; display: inline-block; margin-bottom: 10px; overflow-x: hidden">
-          <img alt="Sponsored by Insiteful.co" style="border-radius: 6px; max-width: 100vw;" src="/insiteful-form-tracking-banner.jpg">
+        <a href="https://insiteful.co/?ref=pdt" target="_blank" style="margin: 0 auto 10px; text-align: center; display: block; max-width: 100%;">
+          <img alt="Sponsored by Insiteful.co" style="border-radius: 6px; max-width: 100%; height: auto; display: block; margin: 0 auto;" src="/insiteful-form-tracking-banner.jpg">
         </a>
       </div>
 
@@ -340,7 +341,7 @@
       <div>
         <h2 class="text-3xl font-bold mb-8">Related Templates</h2>
         <div class="grid md:grid-cols-3 gap-6">
-                    <a href="agency-pitch-deck-for-figma" class="group bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden hover:border-[#ED6C47]/30 transition-all">
+                    <a href="agency-pitch-deck-for-figma.html" class="group bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden hover:border-[#ED6C47]/30 transition-all">
             <div class="aspect-video bg-slate-800/50 overflow-hidden">
               <img src="/img/figma-agency-pitch.webp" alt="Agency Pitch Deck for Figma" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             </div>
@@ -353,7 +354,7 @@
               <p class="text-sm text-slate-400 line-clamp-2">Free agency pitch deck template for Figma...</p>
             </div>
           </a>
-          <a href="creatable-pitch-deck-template" class="group bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden hover:border-[#ED6C47]/30 transition-all">
+          <a href="creatable-pitch-deck-template.html" class="group bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden hover:border-[#ED6C47]/30 transition-all">
             <div class="aspect-video bg-slate-800/50 overflow-hidden">
               <img src="/img/creatable-pitch-deck.png" alt="Creatable Pitch Deck Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             </div>
@@ -366,7 +367,7 @@
               <p class="text-sm text-slate-400 line-clamp-2">Free pitch deck template for Figma...</p>
             </div>
           </a>
-          <a href="figma-community-pitch-deck" class="group bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden hover:border-[#ED6C47]/30 transition-all">
+          <a href="figma-community-pitch-deck.html" class="group bg-slate-900/50 rounded-2xl border border-slate-800/50 overflow-hidden hover:border-[#ED6C47]/30 transition-all">
             <div class="aspect-video bg-slate-800/50 overflow-hidden">
               <img src="/img/figma-startup-pitch.png" alt="Figma Community Pitch Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             </div>
